@@ -85,9 +85,22 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-vault-config</artifactId>
+			<!-- la versión compatible con tu Spring Cloud / Boot -->
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-bus-dependencies</artifactId>
 			<version>4.0.1</version>
+			<type>pom</type>
+			<scope>import</scope>
 		</dependency>
+		<!-- pom.xml -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+		</dependency>
+
 
 	</dependencies>
 
